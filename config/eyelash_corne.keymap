@@ -59,6 +59,48 @@
         coloncombo {
             bindings = <&kp DE_COLON>;
             key-positions = <38 39>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <23 24>;
+            timeout-ms = <50>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+
+        CAPSWORD {
+            bindings = <&caps_word>;
+            key-positions = <17 23>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <50>;
+        };
+
+        sharpss {
+            bindings = <&kp DE_SHARP_S>;
+            key-positions = <15 16>;
+            layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+        };
+
+        tap {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+            layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+        };
+
+        Bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
     };
 
