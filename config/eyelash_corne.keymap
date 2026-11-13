@@ -161,6 +161,14 @@
             bindings = <&kp DE_LEFT_BRACKET>;
             key-positions = <4 17>;
         };
+
+        mouse_middle {
+            bindings = <&mkp MB3>;
+            key-positions = <4 2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <3>;
+        };
     };
 
     keymap {
@@ -193,10 +201,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL      &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &kp BACKSPACE  &trans
+&trans  &kp EXCL      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL      &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &out OUT_USB  &mkp MB4        &msc SCRL_DOWN  &mkp MB5         &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                      &trans          &trans           &kp SPACE                                                             &kp RET    &kp BACKSPACE  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -205,10 +213,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F1           &kp F2     &kp F3       &kp F4     &kp F5                                  &kp C_VOLUME_UP                &kp F6       &kp DE_U_UMLAUT  &kp F8       &kp DE_O_UMLAUT  &kp F10          &kp F11
-&trans          &kp DE_A_UMLAUT  &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &kp C_PREVIOUS  &kp C_PAUSE        &kp C_NEXT  &bootloader  &mkp LCLK        &mkp MCLK    &mkp RCLK        &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset       &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &kp C_VOLUME_DOWN              &trans       &trans           &bootloader  &sys_reset       &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                            &trans       &trans     &trans                                                                 &trans       &trans           &trans
+&studio_unlock  &kp F1           &kp F2      &kp F3     &kp F4     &kp F5                                  &kp C_VOLUME_UP                &kp F6       &kp DE_U_UMLAUT  &kp F8       &kp DE_O_UMLAUT  &kp F10          &kp F11
+&trans          &kp DE_A_UMLAUT  &bt BT_NXT  &mkp MCLK  &mkp RCLK  &mkp MB4                &kp C_PREVIOUS  &kp C_PAUSE        &kp C_NEXT  &bootloader  &mkp LCLK        &mkp MCLK    &mkp RCLK        &kp PRINTSCREEN  &kp F12
+&trans          &sys_reset       &trans      &none      &trans     &mkp MB5  &kp C_MUTE                    &kp C_VOLUME_DOWN              &trans       &trans           &bootloader  &sys_reset       &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                             &trans     &trans     &trans                                                                 &trans       &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
