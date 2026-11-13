@@ -235,4 +235,4 @@ combos:
   k: (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
 - p: [4, 2]
   k: '&mkp MB3'
-  l: [Fn]
+  l: [SYMBOL]
