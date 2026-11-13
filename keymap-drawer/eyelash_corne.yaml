@@ -27,7 +27,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', s: _}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))
   - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT)))
   - $$mdi:apple-keyboard-shift$$
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
@@ -41,7 +41,7 @@ layers:
   - M
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
   - SYMBOL
@@ -214,3 +214,12 @@ combos:
   l: [QWERTY]
 - p: [0, 1]
   k: $$mdi:progress-download$$
+- p: [36, 37]
+  k: (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK)))
+  l: [QWERTY]
+- p: [7, 22]
+  k: (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
+  l: [QWERTY]
+- p: [8, 23]
+  k: (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))
+  l: [QWERTY]
