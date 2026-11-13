@@ -199,3 +199,18 @@ layers:
 combos:
 - p: [38, 39]
   k: (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  l: [QWERTY]
+- p: [23, 24]
+  k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
+- p: [17, 23]
+  k: $$mdi:alpha-w-box$$
+  l: [QWERTY]
+- p: [15, 16]
+  k: (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
+  l: [QWERTY]
+- p: [16, 17]
+  k: $$mdi:keyboard-tab$$
+  l: [QWERTY]
+- p: [0, 1]
+  k: $$mdi:progress-download$$
