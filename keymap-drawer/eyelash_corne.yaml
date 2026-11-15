@@ -177,7 +177,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
@@ -237,3 +237,6 @@ combos:
 - p: [4, 2]
   k: '&mkp MB3'
   l: [SYMBOL]
+- p: [28, 29]
+  k: $$mdi:bluetooth-off$$
+  l: [Fn]
