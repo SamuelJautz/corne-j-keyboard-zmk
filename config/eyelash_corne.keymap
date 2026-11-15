@@ -177,6 +177,14 @@
             require-prior-idle-ms = <150>;
             layers = <2>;
         };
+
+        clear_profiles {
+            bindings = <&bt BT_CLR>;
+            key-positions = <28 29>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <3>;
+        };
     };
 
     keymap {
@@ -223,7 +231,7 @@
             bindings = <
 &studio_unlock  &kp F1           &kp F2  &kp F3      &kp F4        &kp F5                                    &kp C_VOLUME_UP                &kp F6       &kp DE_U_UMLAUT  &kp F8     &kp DE_O_UMLAUT  &kp F10          &kp F11
 &trans          &kp DE_A_UMLAUT  &none   &none       &kp C_VOL_UP  &none                     &kp C_PREVIOUS  &kp C_PAUSE        &kp C_NEXT  &bootloader  &mkp LCLK        &mkp MCLK  &mkp RCLK        &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset       &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &kp C_MUTE                    &kp C_VOLUME_DOWN              &trans       &trans           &none      &sys_reset       &kp SCROLLLOCK   &kp PAUSE_BREAK
+&bt BT_NXT      &sys_reset       &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &kp C_MUTE                    &kp C_VOLUME_DOWN              &trans       &trans           &none      &sys_reset       &kp SCROLLLOCK   &kp PAUSE_BREAK
                                          &trans      &trans        &bt BT_NXT                                                               &trans       &trans           &trans
             >;
 
