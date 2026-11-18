@@ -185,6 +185,11 @@
             require-prior-idle-ms = <150>;
             layers = <3>;
         };
+
+        Equal {
+            bindings = <&kp DE_EQUAL>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
